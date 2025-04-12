@@ -20,12 +20,13 @@ const Card = ({ entry, onDelete }) => {
               e.target.src = "/placeholder.jpg";
             }}
           />
+         
         </figure>
         <div className="card-body">
           <h2 className="card-title">{entry.title}</h2>
           <p className="text-sm text-gray-400">{entry.date}</p>
           <button
-            className="btn btn-xs bg-gray-800 "
+            className="btn btn-xs w-15 absolute bottom-2 right-2 btn-accent"
             onClick={(e) => {
                 e.stopPropagation(); 
                 onDelete();          

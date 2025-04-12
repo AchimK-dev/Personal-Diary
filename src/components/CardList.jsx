@@ -19,6 +19,7 @@ const CardList = () => {
     return () => window.removeEventListener("storage", onStorageChange);
   }, []);
 
+  // Delete Cards
   const deleteEntry = (indexToDelete) => {
     const stored = JSON.parse(localStorage.getItem("myData")) || [];
     const updated = stored.filter((_, i) => i !== indexToDelete);
